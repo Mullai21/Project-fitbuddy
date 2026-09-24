@@ -25,7 +25,7 @@
 |---|---|
 | Backend | FastAPI |
 | ASGI Server | Uvicorn |
-| AI Models | Google Gemini (`gemini-3.1-pro-preview` for plans, `gemini-3.8-flash` for tips) |
+| AI Models | Google Gemini (`gemini-3.5 flash` for plans, `gemini-3.6-flash` for tips) the other models like 3.1 pro preview are rate limited and exhausted in free tier usage |
 | Templating | Jinja2 |
 | ORM / DB | SQLAlchemy + SQLite |
 | Validation | Pydantic |
