@@ -146,14 +146,6 @@ uvicorn app.main:app --reload
 
 ---
 
-## 📸 Screenshots
-
-![Home Page](./static/images/screenshot-home.png)
-![Result Page](./static/images/screenshot-result.png)
-![Admin Dashboard](./static/images/screenshot-admin.png)
-
----
-
 ## 🔮 Future Improvements
 
 - 🔐 User authentication and login system
