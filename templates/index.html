@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitBuddy — AI Fitness Plan Generator</title>
     <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -26,7 +28,7 @@
         <div class="hero__content">
             <h1 class="text-gradient">Your AI-Powered<br>Fitness Journey</h1>
             <p class="hero__subtitle">Get a personalized 7-day workout plan powered by Google Gemini AI</p>
-            
+
             <!-- Error Alert -->
             {% if error %}
             <div class="alert alert-error">{{ error }}</div>
@@ -38,22 +40,26 @@
                     <div class="form-grid">
                         <div class="form-group">
                             <label for="name" class="form-label">Full Name</label>
-                            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required aria-required="true">
+                            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required
+                                aria-required="true">
                             <span class="form-error" id="nameError"></span>
                         </div>
                         <div class="form-group">
                             <label for="user_id" class="form-label">User ID</label>
-                            <input type="text" id="user_id" name="user_id" class="form-input" placeholder="johndoe123" required aria-required="true">
+                            <input type="text" id="user_id" name="user_id" class="form-input" placeholder="johndoe123"
+                                required aria-required="true">
                             <span class="form-error" id="userIdError"></span>
                         </div>
                         <div class="form-group">
                             <label for="age" class="form-label">Age</label>
-                            <input type="number" id="age" name="age" class="form-input" placeholder="25" min="1" max="119" required aria-required="true">
+                            <input type="number" id="age" name="age" class="form-input" placeholder="25" min="1"
+                                max="119" required aria-required="true">
                             <span class="form-error" id="ageError"></span>
                         </div>
                         <div class="form-group">
                             <label for="weight" class="form-label">Weight (kg)</label>
-                            <input type="number" id="weight" name="weight" class="form-input" placeholder="70" min="1" step="0.1" required aria-required="true">
+                            <input type="number" id="weight" name="weight" class="form-input" placeholder="70" min="1"
+                                step="0.1" required aria-required="true">
                             <span class="form-error" id="weightError"></span>
                         </div>
                         <div class="form-group form-group--full">
@@ -92,9 +98,10 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>FitBuddy © 2024 — Powered by Google Gemini AI</p>
+        <p>FitBuddy © 2026 — Powered by Google Gemini AI</p>
     </footer>
 
     <script src="{{ url_for('static', path='js/main.js') }}"></script>
 </body>
+
 </html>

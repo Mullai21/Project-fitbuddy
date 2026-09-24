@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Plan — FitBuddy</title>
     <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -60,13 +62,14 @@
         <!-- Workout Plan Display -->
         <h2 class="mb-3 text-gradient">
             {% if updated_plan %}
-                📝 Your Updated 7-Day Plan
+            📝 Your Updated 7-Day Plan
             {% else %}
-                🏋️ Your 7-Day Workout Plan
+            🏋️ Your 7-Day Workout Plan
             {% endif %}
         </h2>
 
-        <div class="plan-display">{% if updated_plan %}{{ updated_plan }}{% elif workout_plan %}{{ workout_plan }}{% else %}No plan available.{% endif %}</div>
+        <div class="plan-display">{% if updated_plan %}{{ updated_plan }}{% elif workout_plan %}{{ workout_plan }}{%
+            else %}No plan available.{% endif %}</div>
 
         <!-- Collapsible Original Plan (only shown when an update exists) -->
         {% if updated_plan and workout_plan %}
@@ -91,9 +94,8 @@
                 <div class="form-group">
                     <label for="feedback" class="form-label">Your Feedback</label>
                     <textarea id="feedback" name="feedback" class="form-textarea"
-                              placeholder="E.g., 'Add more cardio on Day 3', 'I only have dumbbells', 'Include a rest day on Wednesday'..."
-                              required minlength="3"
-                              aria-required="true"></textarea>
+                        placeholder="E.g., 'Add more cardio on Day 3', 'I only have dumbbells', 'Include a rest day on Wednesday'..."
+                        required minlength="3" aria-required="true"></textarea>
                     <span class="form-error" id="feedbackError"></span>
                 </div>
                 <button type="submit" class="btn btn-primary" id="updateBtn">
@@ -107,9 +109,10 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>FitBuddy © 2024 — Powered by Google Gemini AI</p>
+        <p>FitBuddy © 2026 — Powered by Google Gemini AI</p>
     </footer>
 
     <script src="{{ url_for('static', path='js/main.js') }}"></script>
 </body>
+
 </html>
