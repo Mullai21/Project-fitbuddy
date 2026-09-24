@@ -165,6 +165,3 @@ uvicorn app.main:app --reload
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
